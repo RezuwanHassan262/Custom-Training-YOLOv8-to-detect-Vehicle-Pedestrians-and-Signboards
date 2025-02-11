@@ -17,5 +17,4 @@ This repository contains a **fine-tuned YOLOv8** object detection model trained 
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/YOLOv8-Object-Detection.git
-cd YOLOv8-Object-Detection
+git clone https://github.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection.git
