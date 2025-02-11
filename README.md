@@ -14,7 +14,3 @@ This repository contains a **fine-tuned YOLOv8** object detection model trained 
 
     pip install ultralytics opencv-python pillow matplotlib
 
-
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection.git
