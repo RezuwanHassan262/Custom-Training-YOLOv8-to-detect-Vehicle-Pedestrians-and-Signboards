@@ -9,17 +9,16 @@ This object detection model was trained on a custom dataset that can detect Vehi
 The dataset was developed by extracting frames from this YouTube [video](https://www.youtube.com/watch?v=7HaJArMDKgI&ab_channel=JUtah) and was annotated mostly using **Roboflow's auto-labeling** feature in both using python scripts and roboflow platform.
 Some samples of the dataset are given below.
 
-<h4 style=color:#fe5e21;>Data Collection</h4>
-![HF spaces screenshot](https://raw.githubusercontent.com/RezuwanHassan262/Multi-label-Film-Classifier/main/images/fgc.PNG)
+<h4 style=color:#fe5e21;>Python Script</h4>
+[python_script_dataset](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/annotated_data_batch.png)
+
+<h4 style=color:#fe5e21;>Roboflow Platform</h4>
+[python_script_dataset](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/roboflow_annotated_data.PNG)
+
+<h4 style=color:#fe5e21;>Dataset Links</h4>
+[HuggingFace](https://www.youtube.com/watch?v=7HaJArMDKgI&ab_channel=JUtah) | [Roboflow](https://app.roboflow.com/bondstein-technologies-limited/bondstein_project/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true)
 
 
-
-
-
-
-
-
-This classifier model can classify 27 film (Both Movie and TV Series) genres based on the provided description. <br/>
 
 
 ##  Project Overview
