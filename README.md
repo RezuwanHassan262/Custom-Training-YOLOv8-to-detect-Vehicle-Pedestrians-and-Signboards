@@ -4,9 +4,9 @@ This object detection model was trained on a custom dataset that can detect Vehi
 
 <br/>
 
-<h2 style=color:#fe5e21;>Data Collection</h2>
+<h2 style=color:#fe5e21;>Dataset Development</h2>
 
-The dataset was developed by extracting frames from this YouTube [video](https://www.youtube.com/watch?v=7HaJArMDKgI&ab_channel=JUtah) and was annotated mostly using **Roboflow's auto-labeling** feature in both using python scripts and roboflow platform.
+The dataset was developed by extracting only 150 frames by setting the `stride=100` from this YouTube [video](https://www.youtube.com/watch?v=7HaJArMDKgI&ab_channel=JUtah) and was annotated mostly using **Roboflow's auto-labeling** feature in both using python scripts and roboflow platform.
 Some samples of the dataset are given below.
 
 <h4 style=color:#fe5e21;>Python Script</h4>
@@ -23,6 +23,7 @@ Some samples of the dataset are given below.
 [HuggingFace](https://www.youtube.com/watch?v=7HaJArMDKgI&ab_channel=JUtah) | [Roboflow](https://app.roboflow.com/bondstein-technologies-limited/bondstein_project/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true)
 
 
+<h2 style=color:#fe5e21;>Data Collection</h2>
 
 
 ##  Project Overview
