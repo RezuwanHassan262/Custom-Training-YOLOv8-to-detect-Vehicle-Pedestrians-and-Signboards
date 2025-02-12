@@ -10,12 +10,13 @@ The dataset was developed by extracting frames from this YouTube [video](https:/
 Some samples of the dataset are given below.
 
 <h4 style=color:#fe5e21;>Python Script</h4>
-[python_script_dataset](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/annotated_data_batch.png)
+
+![python_script_dataset](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/annotated_data_batch.png)
 
 
 
 <h4 style=color:#fe5e21;>Roboflow Platform</h4>
-[python_script_dataset](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/roboflow_annotated_data.PNG)
+![python_script_dataset](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/roboflow_annotated_data.PNG)
 
 
 
