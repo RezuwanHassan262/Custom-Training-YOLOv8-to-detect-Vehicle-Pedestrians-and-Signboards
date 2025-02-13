@@ -26,11 +26,12 @@ Some samples of the dataset are given below.
 
 <h2 style=color:#fe5e21;>Model Development</h2>
 
-I finetuned 2 YOLOv8n models. One on Kaggle and on on the Roboflow platform and then reported the Kaggle model since it yielded better results.
+I finetuned a pre-trained model, YOLOv8n to be exact in 2 different environments with the same set of hyperparameter tunings. One on Kaggle and one on the Roboflow platform and then reported the Kaggle model since it yielded better results.
 
-<h4 style=color:#fe5e21;>Roboflow Platform</h4>
 
-![roboflow_platform_annotated_dataset](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/roboflow_annotated_data.PNG)
+<h4 style=color:#fe5e21;>Model Architecture</h4>
+
+![yolov8_model_architecture](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/YOLOv8n_architecture.jpg)
 
 
 
