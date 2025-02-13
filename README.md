@@ -35,6 +35,25 @@ I finetuned a pre-trained model, YOLOv8n to be exact in 2 different environments
 
 
 
+<h4 style=color:#fe5e21;>Kaggle Training Result</h4>
+
+![yolov8_model_architecture](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/results.png)
+
+![yolov8_model_architecture](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/cr.PNG)
+
+![yolov8_model_architecture](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/cf.png)
+
+<h4 style=color:#fe5e21;>Roboflow Platform Training Result</h4>
+
+![yolov8_model_architecture](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/graphs.PNG)
+
+![yolov8_model_architecture](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/x1.PNG)
+
+![yolov8_model_architecture](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/x2.PNG)
+
+![yolov8_model_architecture](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/x3.PNG)
+
+
 ##  Project Overview
 - **Model**: YOLOv8 (fine-tuned)
 - **Dataset**: Extracted frames from a video and labeled using Roboflow
