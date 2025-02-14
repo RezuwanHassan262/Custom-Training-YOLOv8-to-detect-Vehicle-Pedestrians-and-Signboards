@@ -26,13 +26,12 @@ Some samples of the dataset are given below.
 
 <h2 style=color:#fe5e21;>Model Development</h2>
 
-I finetuned a pre-trained model, YOLOv8n to be exact in 2 different environments with the same set of hyperparameter tunings. One on Kaggle and one on the Roboflow platform and then reported the Kaggle model since it yielded better results.
+I finetuned a pre-trained model, YOLOv8n, to be exact, in 2 different environments with the same set of hyperparameter tunings, One on Kaggle and one on the Roboflow platform. I then reported the Kaggle model since it yielded better results.
 
 
 <h4 style=color:#fe5e21;>Model Architecture</h4>
 
 ![yolov8_model_architecture](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/YOLOv8n_architecture.jpg)
-
 
 
 <h4 style=color:#fe5e21;>Kaggle Training Result</h4>
@@ -48,7 +47,7 @@ The figure above illustrates the training losses (train/box_loss, train/cls_loss
 
 ![classification_report](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/cr.PNG)
 
-The table is summarizing precision (P), recall (R), and mean Average Precision (mAP50 & mAP50-95) of the model across different classes: pedestrians, signposts, and vehicles.
+The table summarizes precision (P), recall (R), and mean Average Precision (mAP50 & mAP50-95) of the model across different classes: pedestrians, signposts, and vehicles.
 The model shows good overall performance with no strong signs of overfitting, as precision and recall are balanced, and validation mAP is reasonable. Vehicles are detected well (P: 0.805, R: 0.868, mAP50: 0.903), while pedestrians perform decently (P: 0.73, R: 0.692, mAP50: 0.758), but signposts struggle (P: 0.581, R: 0.48, mAP50: 0.535), likely due to class imbalance or insufficient training data. The drop in mAP50-95 (0.501 overall) suggests bounding box localization could improve. 
 
 
@@ -63,7 +62,7 @@ As mentioned earlier, I finetuned the model on 2 different platforms, The result
 
 ![training_curves](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/graphs.PNG)
 
-As we can see in the figure above, over the 300 epochs during the training session of the model, the progression of mAP (mean Average Precision) and loss functions. The mAP graph (top) indicates steady improvement suggesting decent model performance. The loss graphs show a sharp initial decline stabilizing at lower values indicating effective learning without major signs of overfitting. The slight increase in object loss* towards the later epochs may suggest minor instability. Overall trends are suggesting the model is learning well.
+As we can see in the figure above, over the 300 epochs during the training session of the model, the progression of mAP (mean Average Precision) and loss functions. The mAP graph (top) indicates steady improvement suggesting decent model performance. The loss graphs show a sharp initial decline stabilizing at lower values indicating effective learning without major signs of overfitting. The slight increase in object loss* towards the later epochs may suggest minor instability. Overall trends indicate the model is learning well.
 
 
 ![cf_va](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/x1.PNG)
@@ -83,9 +82,9 @@ The overall mean average precision by class (mAP50) for the valid set is 72, wit
 
 The overall mean average precision by class (mAP50) for the test set is 69, with individual class performance scores of 65 for pedestrians, 55 for signposts, and 87 for vehicles. 
 
-![mAP50_test](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/f1_conf.PNG)
+![f1_conf](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/f1_conf.PNG)
 
-The figure above represents the F1-Confidence Curve illustrating the relationship between confidence thresholds and the F1 score for different object classes in the model. The peak F1 score for all classes is 0.69 at a confidence threshold of 0.218, indicating the optimal balance point for classification decisions. 
+The figure above represents the F1-Confidence Curve illustrating the relationship between confidence thresholds and the F1 score for different object classes in the model. The peak F1 score for all classes is 0.69 at a confidence threshold of 0.218, indicating the optimal balance point for classification decisions and the model performance is moderately good.
 
 <h4 style=color:#fe5e21;>Model Deployment</h4>
 
