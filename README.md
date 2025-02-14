@@ -37,15 +37,31 @@ I finetuned a pre-trained model, YOLOv8n to be exact in 2 different environments
 
 <h4 style=color:#fe5e21;>Kaggle Training Result</h4>
 
-![yolov8_model_architecture](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/results.png)
+![training_curves](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/results.png)
 
-![yolov8_model_architecture](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/cr.PNG)
+The training appears healthy and effective, with no strong signs of overfitting. The model is improving consistently, and validation metrics align well with training progress.
 
-![yolov8_model_architecture](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/cf.png)
+The figure above illustrates the training losses (train/box_loss, train/cls_loss, train/dfl_loss) decrease smoothly indicating the model is learning effectively and the validation losses (val/box_loss, val/cls_loss, val/dfl_loss) also decrease, following a similar pattern to the training losses, meaning the model generalizes well. As we see in the subplots, the Precision, Recall, and mAP scores are increasing consistently indicating the model is improving its detection capabilities. Some fluctuations in precision and recall are visible but they generally trend upwards suggesting the model is not memorizing the training data excessively and not overfitting. The overall trend suggests effective learning and performance improvement over time.
+
+
+![classification_report](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/cr.PNG)
+
+The table is summarizing precision (P), recall (R), and mean Average Precision (mAP50 & mAP50-95) of the model across different classes: pedestrians, signposts, and vehicles.
+The model shows good overall performance with no strong signs of overfitting, as precision and recall are balanced, and validation mAP is reasonable. Vehicles are detected well (P: 0.805, R: 0.868, mAP50: 0.903), while pedestrians perform decently (P: 0.73, R: 0.692, mAP50: 0.758), but signposts struggle (P: 0.581, R: 0.48, mAP50: 0.535), likely due to class imbalance or insufficient training data. The drop in mAP50-95 (0.501 overall) suggests bounding box localization could improve. 
+
+
+![confusion_matrix](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/cf.png)
+
+The confusion matrix above illustrates a strong diagonal presence indicates good overall classification, but significant misclassifications exist. Pedestrians and signposts show weaker performance. The background class, which should not exist, absorbs many incorrect predictions, suggesting the model struggles with uncertain detections. 
+
 
 <h4 style=color:#fe5e21;>Roboflow Platform Training Result</h4>
 
 ![yolov8_model_architecture](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/graphs.PNG)
+
+<!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+
 
 ![yolov8_model_architecture](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/x1.PNG)
 
