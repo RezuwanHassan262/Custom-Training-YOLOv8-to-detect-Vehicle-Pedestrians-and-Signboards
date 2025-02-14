@@ -1,6 +1,6 @@
 <h1 align='center' style=color:#fe5e21;><strong>Custom Training YOLOv8n to detect Vehicle, Pedestrians and Signboards</strong></h1>
 
-This object detection model was trained on a custom dataset that can detect Vehicle, Pedestrians and Signboards from images.
+This object detection model was trained on a custom dataset that can detect Vehicles, Pedestrians, and Signboards from images.
 
 <br/>
 
@@ -88,10 +88,17 @@ The overall mean average precision by class (mAP50) for the test set is 69, with
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
 
 
-##  Project Overview
-- **Model**: YOLOv8 (fine-tuned)
-- **Dataset**: Extracted frames from a video and labeled using Roboflow
-- **Training**: Trained using Ultralytics YOLOv8 framework
-- **Application**: Custom object detection
+
+<h4 style=color:#fe5e21;>Model Deployment</h4>
+
+
+The final model was deployed in HuggingFace Spaces using Gradio App. The implementation can be found in deployment [here](https://huggingface.co/spaces/Rezuwan/Road_and_Pedestrian_Detection)
+
+
+![Model deployment on huggingface spaces screenshot](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/inference_image_ss.PNG) 
+
+The final model was deployed in the local device also using Streamlit App as shown below
+
+![Model deployment on streamlit screenshot](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/streamlit_image.png) 
 
 ## Note: couldn't upload everything related to this project on github due to space restriction. Please find everything [here](https://drive.google.com/drive/folders/1Mf7FGdRDhd3JZC-tb-gghykeM1qa4cc6?usp=sharing)
