@@ -63,18 +63,29 @@ As mentioned earlier, I finetuned the model on 2 different platforms, The result
 
 ![training_curves](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/graphs.PNG)
 
-Over the 300 epochs during the training session of the model, the progression of mAP (mean Average Precision) and loss functions. The mAP graph (top) indicates steady improvement suggesting decent model performance. The loss graphs show a sharp initial decline stabilizing at lower values indicating effective learning without major signs of overfitting. The slight increase in object loss* towards the later epochs may suggest minor instability. Overall trends are suggesting the model is learning well.
+As we can see in the figure above, over the 300 epochs during the training session of the model, the progression of mAP (mean Average Precision) and loss functions. The mAP graph (top) indicates steady improvement suggesting decent model performance. The loss graphs show a sharp initial decline stabilizing at lower values indicating effective learning without major signs of overfitting. The slight increase in object loss* towards the later epochs may suggest minor instability. Overall trends are suggesting the model is learning well.
 
 
-![yolov8_model_architecture](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/x1.PNG)
+![cf_va](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/x1.PNG)
+
+
+1. The confusion matrix on the left visualizes incorrect predictions highlighting false positives and false negatives with color-coded intensity and helping to analyze misclassifications. 
+
+2. The vector analysis on the right maps model predictions based on similarity where darker points indicate lower f1 scores, assisting in identifying areas where the model struggles.
+
+
+
+![mAP50_valid](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/x3.PNG)
+
+The overall mean average precision by class (mAP50) for the valid set is 72, with individual class performance scores of 73 for pedestrians, 56 for signposts, and 88 for vehicles. 
+
+![mAP50_test](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/x2.PNG)
+
+The overall mean average precision by class (mAP50) for the test set is 69, with individual class performance scores of 65 for pedestrians, 55 for signposts, and 87 for vehicles. 
 
 <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
-
-
-![yolov8_model_architecture](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/x2.PNG)
-
-![yolov8_model_architecture](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/x3.PNG)
 
 
 ##  Project Overview
