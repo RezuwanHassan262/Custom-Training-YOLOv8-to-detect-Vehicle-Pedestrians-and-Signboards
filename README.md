@@ -37,6 +37,8 @@ I finetuned a pre-trained model, YOLOv8n to be exact in 2 different environments
 
 <h4 style=color:#fe5e21;>Kaggle Training Result</h4>
 
+I finetuned the model on 2 different platforms, The results below are for the Kaggle platform.
+
 ![training_curves](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/results.png)
 
 The training appears healthy and effective, with no strong signs of overfitting. The model is improving consistently, and validation metrics align well with training progress.
@@ -57,13 +59,18 @@ The confusion matrix above illustrates a strong diagonal presence indicates good
 
 <h4 style=color:#fe5e21;>Roboflow Platform Training Result</h4>
 
-![yolov8_model_architecture](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/graphs.PNG)
+As mentioned earlier, I finetuned the model on 2 different platforms, The results below are for the RoboFlow platform.
+
+![training_curves](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/graphs.PNG)
+
+Over the 300 epochs during the training session of the model, the progression of mAP (mean Average Precision) and loss functions. The mAP graph (top) indicates steady improvement suggesting decent model performance. The loss graphs show a sharp initial decline stabilizing at lower values indicating effective learning without major signs of overfitting. The slight increase in object loss* towards the later epochs may suggest minor instability. Overall trends are suggesting the model is learning well.
+
+
+![yolov8_model_architecture](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/x1.PNG)
 
 <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
 
-
-![yolov8_model_architecture](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/x1.PNG)
 
 ![yolov8_model_architecture](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/x2.PNG)
 
