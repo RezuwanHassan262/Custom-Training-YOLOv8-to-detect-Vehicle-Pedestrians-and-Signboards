@@ -83,22 +83,21 @@ The overall mean average precision by class (mAP50) for the valid set is 72, wit
 
 The overall mean average precision by class (mAP50) for the test set is 69, with individual class performance scores of 65 for pedestrians, 55 for signposts, and 87 for vehicles. 
 
-<!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+![mAP50_test](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/f1_conf.PNG)
 
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
-
-
+The figure above represents the F1-Confidence Curve illustrating the relationship between confidence thresholds and the F1 score for different object classes in the model. The peak F1 score for all classes is 0.69 at a confidence threshold of 0.218, indicating the optimal balance point for classification decisions. 
 
 <h4 style=color:#fe5e21;>Model Deployment</h4>
 
 
 The final model was deployed in HuggingFace Spaces using Gradio App. The implementation can be found in deployment [here](https://huggingface.co/spaces/Rezuwan/Road_and_Pedestrian_Detection)
 
-
 ![Model deployment on huggingface spaces screenshot](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/inference_image_ss.PNG) 
 
 The final model was deployed in the local device also using Streamlit App as shown below
 
-![Model deployment on streamlit screenshot](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/streamlit_image.png) 
+![streamlit screenshot landing page](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/p0.PNG) 
+
+![streamlit screenshot inference page](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/p3.PNG) 
 
 ## Note: couldn't upload everything related to this project on github due to space restriction. Please find everything [here](https://drive.google.com/drive/folders/1Mf7FGdRDhd3JZC-tb-gghykeM1qa4cc6?usp=sharing)
