@@ -100,10 +100,10 @@ The final model was also deployed on the internet using Streamlit as an [Web App
 
 ### Landing Page
 
-![streamlit screenshot landing page](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/p0.PNG) 
+![streamlit screenshot landing page](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/streamlit_1.PNG) 
 
 ### Model Inference Page
 
-![streamlit screenshot inference page](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/p3.PNG) 
+![streamlit screenshot inference page](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/streamlit_2.PNG) 
 
 ## Note: couldn't upload everything related to this project on github due to space restriction. Please find everything [here](https://drive.google.com/drive/folders/1Mf7FGdRDhd3JZC-tb-gghykeM1qa4cc6?usp=sharing)
