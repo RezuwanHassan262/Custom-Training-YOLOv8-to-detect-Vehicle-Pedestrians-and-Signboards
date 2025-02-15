@@ -111,10 +111,10 @@ def main():
         
         else:
             img = cv2.imread(demo_img)
-            image = np.array(Image.open("images/inference_images/eg_3.PNG"))
+            image = np.array(Image.open("images/inference_images/eg_4.PNG"))
         
         st.sidebar.text('Input Image')
-        st.sidebar.image(np.array(Image.open("images/inference_images/eg_3.PNG")))
+        st.sidebar.image(np.array(Image.open("images/inference_images/eg_4.PNG")))
         
         #image = np.array(Image.open(img_file_buffer))
         #img = cv2.imdecode(np.fromstring(img_file_buffer.read(), np.uint8), 1)
