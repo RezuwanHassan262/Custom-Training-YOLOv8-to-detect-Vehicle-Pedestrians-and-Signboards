@@ -105,18 +105,18 @@ def main():
         st.sidebar.markdown('---')
         img_file_buffer = st.sidebar.file_uploader("Upload an Image", type=['jpg', 'jpeg', 'png'])
 
-        # if img_file_buffer is not None:
-        #     img = cv2.imdecode(np.fromstring(img_file_buffer.read(), np.uint8), 1)
-        #     image = np.array(Image.open(img_file_buffer))
+        if img_file_buffer is not None:
+            img = cv2.imdecode(np.fromstring(img_file_buffer.read(), np.uint8), 1)
+            image = np.array(Image.open(img_file_buffer))
         
-        # else:
-        #     img = cv2.imread(demo_img)
-        #     image = np.array(Image.open("https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/refs/heads/main/images/inference_images/eg_3.PNG"))
+        else:
+            img = cv2.imread(demo_img)
+            image = np.array(Image.open("https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/refs/heads/main/images/inference_images/eg_3.PNG"))
 
-        #img = cv2.imdecode(np.fromstring(img_file_buffer.read(), np.uint8), 1)
+        img = cv2.imdecode(np.fromstring(img_file_buffer.read(), np.uint8), 1)
         image = np.array(Image.open(img_file_buffer))
         st.sidebar.text('Input Image')
-        # st.sidebar.image(np.array(Image.open("https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/refs/heads/main/images/inference_images/eg_3.PNG")))
+        st.sidebar.image(np.array(Image.open("https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/refs/heads/main/images/inference_images/eg_3.PNG")))
 
         image_app(#img, 
                   st, 
