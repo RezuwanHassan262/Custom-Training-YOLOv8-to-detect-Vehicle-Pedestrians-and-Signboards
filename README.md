@@ -88,12 +88,15 @@ The figure above represents the F1-Confidence Curve illustrating the relationshi
 
 <h4 style=color:#fe5e21;>Model Deployment</h4>
 
+<h4 style=color:#fe5e21;>HuggingFace Spaces</h4>
 
 The final model was deployed in HuggingFace Spaces using Gradio App. The implementation can be found in deployment [here](https://huggingface.co/spaces/Rezuwan/Road_and_Pedestrian_Detection)
 
 ![Model deployment on huggingface spaces screenshot](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/inference_image_ss.PNG) 
 
-The final model was deployed in the local device also using Streamlit App as shown below
+<h4 style=color:#fe5e21;>Streamlit Web App</h4>
+
+The final model was also deployed on the internet using Streamlit as an [Web App](https://yolov8-custom-training-object-detection-j3besa9ppegzcdzslzsk8t.streamlit.app/) and also on my own local machine without any API support.
 
 ### Landing Page
 
