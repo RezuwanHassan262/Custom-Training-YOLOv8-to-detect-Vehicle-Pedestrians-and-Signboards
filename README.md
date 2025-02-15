@@ -86,7 +86,7 @@ The overall mean average precision by class (mAP50) for the test set is 69, with
 
 The figure above represents the F1-Confidence Curve illustrating the relationship between confidence thresholds and the F1 score for different object classes in the model. The peak F1 score for all classes is 0.69 at a confidence threshold of 0.218, indicating the optimal balance point for classification decisions and the model performance is moderately good.
 
-<h4 style=color:#fe5e21;>Model Deployment</h4>
+<h2 style=color:#fe5e21;>Model Deployment</h2>
 
 <h4 style=color:#fe5e21;>HuggingFace Spaces</h4>
 
