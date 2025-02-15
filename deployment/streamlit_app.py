@@ -111,10 +111,10 @@ def main():
         
         else:
             img = cv2.imread(demo_img)
-            image = np.array(Image.open("https://www.nyc.gov/assets/visionzero/images/content/pages/PedCrossing.jpg"))
+            image = np.array(Image.open("https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/refs/heads/main/images/inference_images/eg_3.PNG"))
         
         st.sidebar.text('Input Image')
-        st.sidebar.image(np.array(Image.open("https://www.nyc.gov/assets/visionzero/images/content/pages/PedCrossing.jpg")))
+        st.sidebar.image(np.array(Image.open("https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/refs/heads/main/images/inference_images/eg_3.PNG")))
 
         image_app(img, st, confidence) 
 
