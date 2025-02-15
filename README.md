@@ -98,11 +98,11 @@ The final model was deployed in HuggingFace Spaces using Gradio App. The impleme
 
 The final model was also deployed on the internet using Streamlit as an [Web App](https://yolov8-custom-training-object-detection-j3besa9ppegzcdzslzsk8t.streamlit.app/) and also on my own local machine without any API support.
 
-### Landing Page
+**Landing Page**
 
 ![streamlit screenshot landing page](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/streamlit_1.PNG) 
 
-### Model Inference Page
+**Model Inference Page**
 
 ![streamlit screenshot inference page](https://raw.githubusercontent.com/RezuwanHassan262/YOLOv8-Custom-Training-Object-Detection/main/images/streamlit_2.PNG) 
 
