@@ -63,7 +63,7 @@ def image_app(image, st, conf):
 
 
 def main():
-    st.title(":green[Pedestrians, vehicles and signboard detection]")
+    st.title(":green[Pedestrians, vehicles and signboard tracking]")
     #st.title("_Streamlit_ is :blue[cool] :sunglasses:")
     # st.sidebar.title('Settings')
     # st.sidebar.subheader('Parameter')
@@ -111,16 +111,12 @@ def main():
         
         else:
             img = cv2.imread(demo_img)
-            image = np.array(Image.open("images/inference_images/eg_3.PNG"))
-
-        img = cv2.imdecode(np.fromstring(img_file_buffer.read(), np.uint8), 1)
-        image = np.array(Image.open(img_file_buffer))
+            image = np.array(Image.open("images/inference_images/eg_3.png"))
+        
         st.sidebar.text('Input Image')
-        st.sidebar.image(np.array(Image.open("images/inference_images/eg_3.PNG")))
+        st.sidebar.image(np.array(Image.open("images/inference_images/eg_3.png")))
 
-        image_app(img, 
-                  st, 
-                  confidence) 
+        image_app(img, st, confidence) 
 
 
 if __name__ == "__main__":
