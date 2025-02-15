@@ -111,10 +111,10 @@ def main():
         
         else:
             img = cv2.imread(demo_img)
-            image = np.array(Image.open("images/inference_images/eg_3.png"))
+            image = np.array(Image.open("https://www.nyc.gov/assets/visionzero/images/content/pages/PedCrossing.jpg"))
         
         st.sidebar.text('Input Image')
-        st.sidebar.image(np.array(Image.open("images/inference_images/eg_3.png")))
+        st.sidebar.image(np.array(Image.open("https://www.nyc.gov/assets/visionzero/images/content/pages/PedCrossing.jpg")))
 
         image_app(img, st, confidence) 
 
