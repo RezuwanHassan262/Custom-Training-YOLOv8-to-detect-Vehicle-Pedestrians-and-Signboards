@@ -116,8 +116,9 @@ def main():
         # st.sidebar.text('Input Image')
         # st.sidebar.image(np.array(Image.open("images/inference_images/eg_3.png")))
         
-        img = cv2.imdecode(np.fromstring(img_file_buffer.read(), np.uint8), 1)
+        #img = cv2.imdecode(np.fromstring(img_file_buffer.read(), np.uint8), 1)
         image = np.array(Image.open(img_file_buffer))
+        img = cv2.imdecode(np.fromstring(img_file_buffer.read(), np.uint8), 1)
         image_app(img, st, confidence) 
 
 
