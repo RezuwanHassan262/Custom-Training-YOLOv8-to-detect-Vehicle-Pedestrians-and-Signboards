@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import cv2
 from PIL import Image
-from app_vid import *
+from deployment.app_vid import *
 import tempfile
 import torch
 import numpy as np
