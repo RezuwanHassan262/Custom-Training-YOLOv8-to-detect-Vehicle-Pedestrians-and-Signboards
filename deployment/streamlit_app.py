@@ -68,17 +68,17 @@ def main():
     # st.sidebar.title('Settings')
     # st.sidebar.subheader('Parameter')
 
-    st.markdown(
-        """
-        <style>
-        [data-testid="stAppViewContainer"] {
-            background-image: url("https://images.adsttc.com/media/images/58f8/f346/e58e/ceac/3100/0990/large_jpg/201001_NY_Times_Square_Sn_hetta_N58_publication.jpg?1492710206");
-            background-size: cover;
-        }
-        </style>
-        """,
-        unsafe_allow_html = True
-    )
+    # st.markdown(
+    #     """
+    #     <style>
+    #     [data-testid="stAppViewContainer"] {
+    #         background-image: url("https://images.adsttc.com/media/images/58f8/f346/e58e/ceac/3100/0990/large_jpg/201001_NY_Times_Square_Sn_hetta_N58_publication.jpg?1492710206");
+    #         background-size: cover;
+    #     }
+    #     </style>
+    #     """,
+    #     unsafe_allow_html = True
+    # )
 
     app_mode = st.sidebar.selectbox('Choose the App Mode', ['App Description', 'Run on Image'])
 
