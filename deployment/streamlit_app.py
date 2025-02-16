@@ -53,9 +53,9 @@ def image_app(image, st, conf):
     st.markdown(
             """
 
-        :green[This model has also been deployed as a web app.]
+        :green[This model has also been deployed as a web app on HuggingFace Spaces also.]
 
-        :green[[Click here](https://huggingface.co/spaces/Rezuwan/Road_and_Pedestrian_Detection) to check out the WebApp version of this app.]
+        :green[[Click here](https://huggingface.co/spaces/Rezuwan/Road_and_Pedestrian_Detection) to check out the HuggingFace spaces version of this web app.]
 
             """
     )
@@ -88,9 +88,9 @@ def main():
         st.markdown(
             """
 
-        :green[This model has also been deployed as a web app.]
+        :green[This model has also been deployed as a web app on HuggingFace spaces also.]
 
-        :green[[Click here](https://huggingface.co/spaces/Rezuwan/Road_and_Pedestrian_Detection) to check out the WebApp version of this app.]
+        :green[[Click here](https://huggingface.co/spaces/Rezuwan/Road_and_Pedestrian_Detection) to check out the HuggingFace spaces version of this web app.]
 
             """
         )
