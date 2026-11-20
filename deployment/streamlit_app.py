@@ -50,15 +50,15 @@ def image_app(image, st, conf):
         
     st.subheader(':green[Output Image]')
     st.image(image, channels='BGR')
-    st.markdown(
-            """
+    # st.markdown(
+    #         """
 
-        :green[This model has also been deployed as a web app on HuggingFace Spaces also.]
+    #     :green[This model has also been deployed as a web app on HuggingFace Spaces also.]
 
-        :green[[Click here](https://huggingface.co/spaces/Rezuwan/Road_and_Pedestrian_Detection) to check out the HuggingFace spaces version of this web app.]
+    #     :green[[Click here](https://huggingface.co/spaces/Rezuwan/Road_and_Pedestrian_Detection) to check out the HuggingFace spaces version of this web app.]
 
-            """
-    )
+    #         """
+    # )
 
 
 
