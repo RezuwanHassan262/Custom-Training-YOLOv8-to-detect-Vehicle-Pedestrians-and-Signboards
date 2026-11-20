@@ -10,6 +10,11 @@ from ultralytics import YOLO
 import time
 import supervision as sv
 
+st.set_page_config(
+    page_title="Pedestrians, vehicles and signboard tracking",
+    initial_sidebar_state="expanded",
+)
+
 demo_img = 'images/streamlit_image.png'
 # Image part
 def image_app(image, st, conf):
@@ -80,20 +85,20 @@ def main():
         unsafe_allow_html = True
     )
 
-    app_mode = st.sidebar.selectbox('Choose the App Mode', ['App Description', 'Run on Image'])
+    app_mode = st.sidebar.selectbox('Choose the App Mode', ['App Description', 'Run on Image'], index=1)
 
     if app_mode == 'App Description':
         st.markdown(":green[This app markdowns pedestrians, vehicles and signboards from urban street images]")   
         st.image(demo_img)
-        st.markdown(
-            """
+        # st.markdown(
+        #     """
 
-        :green[This model has also been deployed as a web app on HuggingFace spaces also.]
+        # :green[This model has also been deployed as a web app on HuggingFace spaces also.]
 
-        :green[[Click here](https://huggingface.co/spaces/Rezuwan/Road_and_Pedestrian_Detection) to check out the HuggingFace spaces version of this web app.]
+        # :green[[Click here](https://huggingface.co/spaces/Rezuwan/Road_and_Pedestrian_Detection) to check out the HuggingFace spaces version of this web app.]
 
-            """
-        )
+        #     """
+        # )
         img = cv2.imread(demo_img)
         image = np.array(Image.open(demo_img))
 
